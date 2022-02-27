@@ -2,11 +2,14 @@
 
 // When the window loads, this checks, if the user previously turned on dark/light mode
 window.onload = function() {
-    if (window.localStorage.length > 1) {
+    if (window.localStorage.getItem(0) != "null" && window.localStorage.getItem(1) != "null") {
         document.body.className = window.localStorage.getItem(0);
         document.getElementById("btn_image").src = window.localStorage.getItem(1);
     }
-    console.log(window.localStorage.getItem(1));
+    else {
+        document.body.className = "dark-theme";
+        document.getElementById("btn_image").src = "images/sun-fill.png";
+    }
 }
 
 // This function toggles dark/light mode
