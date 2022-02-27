@@ -1,21 +1,37 @@
 'use strict';
 
-function dark_to_light() {
-    document.body.classList.toggle('dark-theme');
-    document.body.classList.toggle('light-theme');
+// When the window loads, this checks, if the user previously turned on dark/light mode
+window.onload = function() {
+    if (window.localStorage.length > 1) {
+        document.body.className = window.localStorage.getItem(0);
+        document.getElementById("btn_image").src = window.localStorage.getItem(1);
+    }
+    console.log(window.localStorage.getItem(1));
+}
 
-    var button = document.getElementById('dark_light_btn');
-    var button_image = document.getElementById('btn_image');
+// This function toggles dark/light mode
+function dark_to_light() {
+    document.body.classList.toggle("dark-theme");
+    document.body.classList.toggle("light-theme");
+
+    window.localStorage.clear();
+    window.localStorage.setItem(0, document.body.className);
+
+    var button = document.getElementById("dark_light_btn");
+    var button_image = document.getElementById("btn_image");
 
     var className = document.body.className;
     if (className == "light-theme") {
         button_image.src = "images/moon-clear-fill.png";
+        window.localStorage.setItem(1, "images/moon-clear-fill.png");
     }
     else {
         button_image.src = "images/sun-fill.png";
+        window.localStorage.setItem(1, "images/sun-fill.png");
     }
 }
 
+// This function brings the user to a random page
 function go_to_random_page() {
     var randomNumber = Math.floor(Math.random() * 4);
 
