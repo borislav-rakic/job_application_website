@@ -36,19 +36,16 @@ function dark_to_light() {
 
 // This function brings the user to a random page
 function go_to_random_page() {
-    var randomNumber = Math.floor(Math.random() * 4);
+    var randomNumber = Math.floor(Math.random() * 3);
 
     switch(randomNumber) {
         case 0:
-            window.location.replace("index.html");
-            break;
-        case 1:
             window.location.replace("about_me.html");
             break;
-        case 2:
+        case 1:
             window.location.replace("defend_humanity.html");
             break;
-        case 3:
+        case 2:
             window.location.replace("javascript.html");
             break;
     }
