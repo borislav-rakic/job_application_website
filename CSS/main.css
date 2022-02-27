@@ -33,20 +33,23 @@ body {
 .content_page_links {
     display: flex;
     padding: 10px;
+    line-height: 1.5;
 }
 
 .page_links {
     width: 200px;
-    line-height: 2.5;
     color: var(--btnBackground);
 }
 
 .page_links_1 {
     display: block;
+
     border: solid;
     border-radius: 10px;
     border-width: 1px;
+
     padding: 10px;
+
     background-color: var(--pageLinks1Background);
     text-decoration: none;
     color: var(--btnBackground);
@@ -58,10 +61,13 @@ body {
 
 .page_links_2 {
     display: block;
+
     border: solid;
     border-radius: 10px;
     border-width: 1px;
+
     padding: 10px;
+
     background-color: var(--pageLinks2Background);
     text-decoration: none;
     color: var(--btnBackground);
@@ -73,9 +79,18 @@ body {
 
 .main_content {
     flex: 1;
+
+    border: none;
+    border-radius: 10px;
+
     margin-left: 40px;
     margin-right: 40px;
-    padding: 20px;
+
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+
     background-color: var(--mainBackground);
 }
 
@@ -130,4 +145,21 @@ body {
     display: block;
     width: 36px;
     height: 36px;
+}
+
+.random_page {
+    padding: 5px;
+    font-size: 24px;
+
+    background-color: rgb(45, 252, 45);
+
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.random_page:hover {
+    background-color: rgb(45, 185, 45);
 }
