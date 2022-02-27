@@ -1,36 +1,116 @@
-:root {
-    --white: #FFFFFF;
-    --black: #000000;
-    --blue: rgb(0, 12, 177);
-    --skyblue: rgb(0, 195, 255);
-}
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#btn_image {
-    width: 36px;
-    height: 36px;
-    top: 20px;
-    right: 20px;
-}
-
 .light-theme {
-    background-image: linear-gradient(to right, var(--skyblue), var(--white));
-    color: var(--black);
-    --btnBackground: var(--black);
-    --btnFontColor: var(--white);
+    background-color: white;
+    color: black;
+    --btnBackground: black;
+    --btnOnclickBackground: rgb(90, 90, 90);
+    --mainBackground: rgb(184, 184, 184);
+
+    --pageLinks1Background: rgb(192, 192, 192);
+    --pageLinks1OnHover: rgb(130, 130, 130);
+    
+    --pageLinks2Background: rgb(255, 255, 255);
+    --pageLinks2OnHover: rgb(188, 188, 188);
 }
 
 .dark-theme {
-    background-image: linear-gradient(to right, var(--blue), var(--black));
-    color: var(--white);
-    --btnBackground: var(--white);
-    --btnFontColor: var(--black);
+    background-color: black;
+    color: white;
+    --btnBackground: white;
+    --btnOnclickBackground: rgb(165, 165, 165);
+    --mainBackground: rgb(71, 71, 71);
+
+    --pageLinks1Background: rgb(63, 63, 63);
+    --pageLinks1OnHover: rgb(100, 100, 100);
+
+    --pageLinks2Background: rgb(0, 0, 0);
+    --pageLinks2OnHover: rgb(67, 67, 67);
+}
+
+.content_page_links {
+    display: flex;
+    padding: 10px;
+}
+
+.page_links {
+    width: 200px;
+    line-height: 2.5;
+    color: var(--btnBackground);
+}
+
+.page_links_1 {
+    display: block;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 10px;
+    background-color: var(--pageLinks1Background);
+    text-decoration: none;
+    color: var(--btnBackground);
+}
+
+.page_links_1:hover {
+    background-color: var(--pageLinks1OnHover);
+}
+
+.page_links_2 {
+    display: block;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 10px;
+    background-color: var(--pageLinks2Background);
+    text-decoration: none;
+    color: var(--btnBackground);
+}
+
+.page_links_2:hover {
+    background-color: var(--pageLinks2OnHover);
+}
+
+.main_content {
+    flex: 1;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    background-color: var(--mainBackground);
+}
+
+@media screen and (max-width: 950px) {
+    .content_page_links {
+        display: inline;
+    }
+
+    .page_links {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .page_links_1 {
+        display: block;
+        padding: 10px;
+        background-color: var(--pageLinks1Background);
+        text-decoration: none;
+        color: var(--btnBackground);
+        text-align: center;
+    }
+    
+    .page_links_2 {
+        display: block;
+        padding: 10px;
+        background-color: var(--pageLinks2Background);
+        text-decoration: none;
+        color: var(--btnBackground);
+        text-align: center;
+    }
 }
 
 .btn {
+    cursor: pointer;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -38,6 +118,16 @@ body {
     width: 50px;
     border-radius: 50%;
     border: none;
-    color: var(--btnFontColor);
+    box-shadow: -5px 5px 5px grey;
     background-color: var(--btnBackground);
+}
+
+.btn:hover {
+    background-color: var(--btnOnclickBackground);
+}
+
+#btn_image {
+    display: block;
+    width: 36px;
+    height: 36px;
 }
