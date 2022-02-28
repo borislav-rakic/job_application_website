@@ -10,6 +10,11 @@ window.onload = function() {
         document.body.className = "dark-theme";
         document.getElementById("btn_image").src = "images/sun-fill.png";
     }
+
+    if (document.body.classList.contains("null") || 
+    (document.body.classList.contains("dark-theme") && document.body.classList.contains("light-theme"))) {
+        document.body.className = "dark-theme";
+    }
 }
 
 // This function toggles dark/light mode
@@ -34,7 +39,7 @@ function dark_to_light() {
     }
 }
 
-// This function brings the user to a random page
+// This function brings the user to a random page (index.html not included)
 function go_to_random_page() {
     var randomNumber = Math.floor(Math.random() * 3);
 

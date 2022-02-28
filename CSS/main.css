@@ -121,6 +121,8 @@ h1 {
 }
 
 @media screen and (max-width: 950px) {
+
+
     .content_page_links {
         display: inline;
     }
@@ -190,6 +192,10 @@ h1 {
     background-color: rgb(45, 185, 45);
 }
 
-.GitHub_repository:visited {
+.link {
+    color: rgb(0, 137, 190);
+}
+
+.link:visited {
     color: rgb(0, 137, 190);
 }
