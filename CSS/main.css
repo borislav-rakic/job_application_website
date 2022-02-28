@@ -120,38 +120,6 @@ h1 {
     background-color: var(--mainBackground);
 }
 
-@media screen and (max-width: 950px) {
-
-
-    .content_page_links {
-        display: inline;
-    }
-
-    .page_links {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-
-    .page_links_1 {
-        display: block;
-        padding: 10px;
-        background-color: var(--pageLinks1Background);
-        text-decoration: none;
-        color: var(--btnBackground);
-        text-align: center;
-    }
-    
-    .page_links_2 {
-        display: block;
-        padding: 10px;
-        background-color: var(--pageLinks2Background);
-        text-decoration: none;
-        color: var(--btnBackground);
-        text-align: center;
-    }
-}
-
 .btn {
     cursor: pointer;
     position: fixed;
@@ -198,4 +166,49 @@ h1 {
 
 .link:visited {
     color: rgb(0, 137, 190);
+}
+
+/* If the screen is smaller than 950px, this will have effect (e.g. on phones in portrait mode) */
+@media screen and (max-width: 950px) {
+    .noscript_text {
+        font-size: 16px;
+    }
+
+    .random_page {
+        font-size: 16px;
+    }
+
+    .content_page_links {
+        display: inline;
+    }
+
+    .main_content {
+        font-size: 16px;
+    }
+
+    .page_links {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+
+        font-size: 16px;
+    }
+
+    .page_links_1 {
+        display: block;
+        padding: 10px;
+        background-color: var(--pageLinks1Background);
+        text-decoration: none;
+        color: var(--btnBackground);
+        text-align: center;
+    }
+    
+    .page_links_2 {
+        display: block;
+        padding: 10px;
+        background-color: var(--pageLinks2Background);
+        text-decoration: none;
+        color: var(--btnBackground);
+        text-align: center;
+    }
 }
