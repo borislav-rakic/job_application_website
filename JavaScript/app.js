@@ -14,6 +14,7 @@ window.onload = function() {
     if (document.body.classList.contains("null") || 
     (document.body.classList.contains("dark-theme") && document.body.classList.contains("light-theme"))) {
         document.body.className = "dark-theme";
+        document.getElementById("btn_image").src = "images/sun-fill.png";
     }
 }
 
