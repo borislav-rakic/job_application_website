@@ -137,8 +137,9 @@ h1 {
     width: 50px;
     border-radius: 50%;
     border: none;
-    box-shadow: -5px 5px 5px grey;
+    box-shadow: -5px 5px 5px 3px rgb(128, 128, 128, 50%);
     background-color: var(--btnBackground);
+    text-align: center;
 }
 
 .btn:hover {
@@ -149,6 +150,8 @@ h1 {
     display: block;
     width: 36px;
     height: 36px;
+
+    margin: auto;
 }
 
 .random_page {
