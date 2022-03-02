@@ -16,6 +16,23 @@ window.onload = function() {
         document.body.className = "dark-theme";
         document.getElementById("btn_image").src = "images/sun-fill.png";
     }
+
+    init();
+}
+
+function init() {
+    document.getElementById("profile_picture").addEventListener("mouseenter", visible_personal_information);
+    document.getElementById("profile_picture").addEventListener("mouseleave", hide_personal_information);
+}
+
+function visible_personal_information() {
+    document.getElementById("personal_information").style.color = "rgba(255, 255, 255, 100%)";
+    console.log("Hello");
+}
+
+function hide_personal_information() {
+    document.getElementById("personal_information").style.color = "rgba(255, 255, 255, 0%)";
+    console.log("Bye");
 }
 
 // This function toggles dark/light mode
