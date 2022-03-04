@@ -1,5 +1,7 @@
 'use strict';
 
+var timer = null;
+
 // When the window loads, this checks, if the user previously turned on dark/light mode
 window.onload = function() {
     if (window.localStorage.getItem(0) != "null" && window.localStorage.getItem(1) != "null") {
@@ -75,6 +77,8 @@ function init() {
 
 // Makes the personal information visible when the mouse courser hovers over the picture
 function visible_personal_information() {
+    clearTimeout(timer);
+
     var info = document.getElementById("personal_information");
     
     info.style.animationName = "personal_information_on_hover_animation";
@@ -87,7 +91,9 @@ function hide_personal_information() {
 
     info.style.animationName = "personal_information_on_hover_stop_animation";
     
-    setTimeout(function() {
+    clearTimeout(timer);
+
+    timer = setTimeout(function() {
         info.style.display = "none";
     }, 500);
 }
