@@ -247,6 +247,26 @@ h1 {
     animation-fill-mode: forwards;
 }
 
+.language_selection {
+    display: flex;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+#deutsch {
+    background-color: blue;
+    display: block;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+#english {
+    background-color: red;
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 #random_page {
     padding: 5px;
     font-size: 24px;

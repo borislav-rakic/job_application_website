@@ -20,6 +20,35 @@ window.onload = function() {
     }
 
     init();
+
+    if (window.localStorage.getItem(3) == "en") {
+        if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/index.html") {
+            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/index_en.html", "_self");
+        }
+        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/about_me.html") {
+            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/about_me_en.html", "_self");
+        }
+        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/defend_humanity.html") {
+            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/defend_humanity_en.html", "_self");
+        }
+        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/javascript.html") {
+            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/javascript_en.html", "_self");
+        }
+    }
+    else {
+        if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/index_en.html") {
+            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/index.html", "_self");
+        }
+        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/about_me_en.html") {
+            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/about_me.html", "_self");
+        }
+        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/defend_humanity_en.html") {
+            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/defend_humanity.html", "_self");
+        }
+        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/javascript_en.html") {
+            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/javascript.html", "_self");
+        }
+    }
 }
 
 function init() {
@@ -113,7 +142,8 @@ function dark_to_light() {
     document.body.classList.toggle("dark-theme");
     document.body.classList.toggle("light-theme");
 
-    window.localStorage.clear();
+    window.localStorage.removeItem(0);
+    window.localStorage.removeItem(1);
     window.localStorage.setItem(0, document.body.className);
 
     var button_image = document.getElementById("btn_image");
@@ -127,6 +157,16 @@ function dark_to_light() {
         button_image.src = "images/sun-fill.png";
         window.localStorage.setItem(1, "images/sun-fill.png");
     }
+}
+
+function set_german() {
+    window.localStorage.removeItem(3);
+    location.reload();
+}
+
+function set_english() {
+    window.localStorage.setItem(3, "en");
+    window.location.reload();
 }
 
 // This function brings the user to a random page (index.html not included)
