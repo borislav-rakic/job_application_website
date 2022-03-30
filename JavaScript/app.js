@@ -22,31 +22,31 @@ window.onload = function() {
     init();
 
     if (window.localStorage.getItem(3) == "en") {
-        if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/index.html") {
-            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/index_en.html", "_self");
+        if (window.location.href == "https://borislav.rakic.ch") {
+            window.open("https://borislav.rakic.ch/index_en.html", "_self");
         }
-        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/about_me.html") {
-            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/about_me_en.html", "_self");
+        else if (window.location.href == "https://borislav.rakic.ch/about_me.html") {
+            window.open("https://borislav.rakic.ch/about_me_en.html", "_self");
         }
-        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/defend_humanity.html") {
-            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/defend_humanity_en.html", "_self");
+        else if (window.location.href == "https://borislav.rakic.ch/defend_humanity.html") {
+            window.open("https://borislav.rakic.ch/defend_humanity_en.html", "_self");
         }
-        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/javascript.html") {
-            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/javascript_en.html", "_self");
+        else if (window.location.href == "https://borislav.rakic.ch/javascript.html") {
+            window.open("https://borislav.rakic.ch/javascript_en.html", "_self");
         }
     }
     else {
-        if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/index_en.html") {
-            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/index.html", "_self");
+        if (window.location.href == "https://borislav.rakic.ch/index_en.html") {
+            window.open("https://borislav.rakic.ch", "_self");
         }
-        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/about_me_en.html") {
-            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/about_me.html", "_self");
+        else if (window.location.href == "https://borislav.rakic.ch/about_me_en.html") {
+            window.open("https://borislav.rakic.ch/about_me.html", "_self");
         }
-        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/defend_humanity_en.html") {
-            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/defend_humanity.html", "_self");
+        else if (window.location.href == "https://borislav.rakic.ch/defend_humanity_en.html") {
+            window.open("https://borislav.rakic.ch/defend_humanity.html", "_self");
         }
-        else if (window.location.href == "file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/javascript_en.html") {
-            window.open("file:///Users/rakic.borislav/Desktop/HTML/Bewerbung/job_application_website/javascript.html", "_self");
+        else if (window.location.href == "https://borislav.rakic.ch/javascript_en.html") {
+            window.open("https://borislav.rakic.ch/javascript.html", "_self");
         }
     }
 }
