@@ -22,7 +22,7 @@ window.onload = function() {
     init();
 
     if (window.localStorage.getItem(3) == "en") {
-        if (window.location.href == "https://borislav.rakic.ch") {
+        if (window.location.href == "https://borislav.rakic.ch/index.html") {
             window.open("https://borislav.rakic.ch/index_en.html", "_self");
         }
         else if (window.location.href == "https://borislav.rakic.ch/about_me.html") {
@@ -37,7 +37,7 @@ window.onload = function() {
     }
     else {
         if (window.location.href == "https://borislav.rakic.ch/index_en.html") {
-            window.open("https://borislav.rakic.ch", "_self");
+            window.open("https://borislav.rakic.ch/index.html", "_self");
         }
         else if (window.location.href == "https://borislav.rakic.ch/about_me_en.html") {
             window.open("https://borislav.rakic.ch/about_me.html", "_self");
