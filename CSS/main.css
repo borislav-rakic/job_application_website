@@ -231,6 +231,13 @@ h1 {
     animation-fill-mode: forwards;
 }
 
+#defend_humanity_image {
+    border: none;
+    border-radius: 20px;;
+    height: 281;
+    width: 609;
+}
+
 #github_link_container {
     text-align: center;
     font-size: 24px;
